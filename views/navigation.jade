@@ -6,3 +6,11 @@ div.menu
       a(href='/store') Store
     li
       a(href='/about') About
+    - if (typeof user !== 'undefined')
+      li
+        a(href='/user/account') My Account
+      li
+        a(href='/user/logout') Log Out
+    - else
+        li
+          a(href='/user/login') Log In
