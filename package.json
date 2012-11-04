@@ -24,8 +24,7 @@
     "mocha": "*",
     "should": "*",
     "request": "*",
-    "supervisor": "*",
-    "docco": "*"
+    "supervisor": "*"
   },
   "engines": {
     "node": "~0.8.x",
