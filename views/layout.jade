@@ -13,14 +13,17 @@ head
 
   // CSS
   != css('app')
-  
+  != js('http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js')
+  != js('slides.jquery.js')
+  script
+   $(function(){
+     $("#slides").slides();
+   }); 
 body
   .main
     include navigation
     include title
     block content
     include footer
-
-    != js('http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js')
 
 | </html>

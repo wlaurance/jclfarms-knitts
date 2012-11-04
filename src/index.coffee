@@ -11,7 +11,7 @@ app.use express.static(process.cwd() + '/public')
 app.set 'view engine', 'jade'
 # Get root_path return index view
 app.get '/', (req, resp) -> 
-  resp.render 'index'
+  resp.render 'index', images:["http://placehold.it/570x270", "http://placehold.it/570x270", "http://placehold.it/570x270"]
 # Define Port
 port = process.env.PORT or process.env.VMC_APP_PORT or 3000
 # Start Server
