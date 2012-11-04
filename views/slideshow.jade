@@ -1,8 +1,15 @@
 - if (typeof images !== 'undefined')
-  #slides
-    .slides_container
-      - for image in images
-        div
-          img(src=image)
+  #container
+    #example
+      #slides
+        .slides_container
+          - for image in images
+            div.slide
+              img(src=image)
+        a(href="#", class="prev")
+          img(src="images/arrow-prev.png", width="24", height="43", alt="Arrow Prev")
+        a(href="#", class="next")
+          img(src="images/arrow-next.png", width="24", height="43", alt="Arrow Next")
+    img(src="images/frame.png", width="739", height="341", alt="Example Frame", id="frame")
 
 
