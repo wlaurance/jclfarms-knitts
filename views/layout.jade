@@ -5,7 +5,10 @@
 // [if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]
 head
   meta(charset='utf-8')
-  title Express CoffeeScript Template
+  - if (typeof title !== 'undefined')
+    title title
+  - else
+    title The Knitting Lady
   meta(name='description', content='')
   meta(name='author', content='')
   // Mobile Specific
