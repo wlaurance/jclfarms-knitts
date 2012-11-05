@@ -13,7 +13,7 @@
     "which": "*",
     "bootstrap-stylus": "~0.2.1",
     "marked": "~0.2.5",
-    "wlaurance-nodify-shopify": "~0.1.3"
+    "wlaurance-nodify-shopify": "~1.1.1"
   },
   "scripts": {
     "install": "node_modules/coffee-script/bin/cake build",
